@@ -285,12 +285,12 @@ Which is differentiable relative to all of its parameters.
 
 ## To get the whole cost function at the nth sample:
 
-1. Let a performance (fit to data) function be: ![equation](https://latex.codecogs.com/gif.latex?\mathcall{P^{(n)}&space;(w^{(n)},&space;\theta)})
+1. Let a performance (fit to data) function be: ![equation](https://latex.codecogs.com/gif.latex?P^{(n)}&space;(w^{(n)},&space;\theta))
 
 
 Therefore the whole cost function on the nth sample of weights will be:
 
-2. ![equation](https://latex.codecogs.com/gif.latex?\mathcall{L^{(n)}&space;(w^{(n)},&space;\theta)&space;}&space;=&space;\mathcall{C^{(n)}&space;(w^{(n)},&space;\theta)&space;}&space;&plus;&space;\mathcall{P^{(n)}&space;(w^{(n)},&space;\theta)&space;})
+2. ![equation](https://latex.codecogs.com/gif.latex?L^{(n)}&space;(w^{(n)},&space;\theta)&space;&space;=&space;C^{(n)}&space;(w^{(n)},&space;\theta)&space;&space;&plus;&space;P^{(n)}&space;(w^{(n)},&space;\theta)&space;)
 
 We can estimate the true full Cost function by Monte Carlo sampling it (feedforwarding the netwok X times and taking the mean over full loss) and then backpropagate using our estimated value. It works for a low number of experiments per backprop and even for unitary experiments.
 
